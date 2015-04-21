@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="280"/>
+            <point key="canvasLocation" x="1110" y="280"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="eV9-mo-WxB">
@@ -70,7 +70,7 @@
                         <viewControllerLayoutGuide type="bottom" id="GoM-TE-UPn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qmi-Zt-bxb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJ0-HC-eGl">
@@ -100,7 +100,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2e-p2-Wa5">
-                                <rect key="frame" x="0.0" y="65" width="320" height="505"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="635"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPD-Ka-qh5">
                                         <rect key="frame" x="8" y="84" width="235" height="30"/>
@@ -147,6 +147,14 @@
                                             <action selector="gotoAccountsetupDetailsViewController:" destination="cU4-vN-oi9" eventType="touchUpInside" id="cGA-C5-HL6"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CONFIRM PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGr-3G-GSS">
+                                        <rect key="frame" x="7" y="552" width="242" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="cU4-vN-oi9" id="qI0-KI-gAH"/>
+                                        </connections>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm8-xQ-2EF">
                                         <rect key="frame" x="7" y="350" width="211" height="35"/>
                                         <state key="normal" backgroundImage="LoginWithWeChat.png">
@@ -172,6 +180,9 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructorReviewStrip.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJ0-yp-Rrk">
                                         <rect key="frame" x="12" y="231" width="235" height="1"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructorReviewStrip.png" translatesAutoresizingMaskIntoConstraints="NO" id="yeD-57-tte">
+                                        <rect key="frame" x="12" y="541" width="235" height="1"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We'll send a confirmation email" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAn-rb-dVI">
                                         <rect key="frame" x="8" y="299" width="210" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -189,6 +200,35 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I AM NEW TO ILE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-oA-rZ2">
+                                        <rect key="frame" x="12" y="485" width="143" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.13331398367881775" green="0.13334447145462036" blue="0.13331207633018494" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="50" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyr-ZL-ueg">
+                                        <rect key="frame" x="7" y="512" width="242" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="cU4-vN-oi9" id="wmJ-WA-CWP"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhX-5y-Bso">
+                                        <rect key="frame" x="7" y="590" width="211" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="LOG IN" backgroundImage="GetStartedButton.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gotoAccountsetupDetailsViewController:" destination="cU4-vN-oi9" eventType="touchUpInside" id="bx8-vu-ixl"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructorReviewStrip.png" translatesAutoresizingMaskIntoConstraints="NO" id="91N-hu-4JV">
+                                        <rect key="frame" x="12" y="581" width="235" height="1"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
@@ -205,8 +245,11 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="570"/>
+                    <size key="freeformSize" width="320" height="700"/>
                     <connections>
+                        <outlet property="logEmailTextField" destination="cyr-ZL-ueg" id="jch-PN-ZdR"/>
+                        <outlet property="logPasswordTextField" destination="LGr-3G-GSS" id="9Y2-TJ-Ias"/>
+                        <outlet property="loginButton" destination="mhX-5y-Bso" id="inx-pv-joH"/>
                         <outlet property="loginScrollView" destination="p2e-p2-Wa5" id="sP7-9N-35w"/>
                         <outlet property="navigationBarView" destination="QJ0-HC-eGl" id="30a-bK-6Hc"/>
                         <outlet property="regFirstNameTextField" destination="OxT-Iv-otn" id="mj2-Cp-36o"/>
@@ -218,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e74-ka-unM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350" y="281"/>
+            <point key="canvasLocation" x="1110" y="1000"/>
         </scene>
         <!--Customize Intro View Controller-->
         <scene sceneID="Scb-jg-GMd">
@@ -345,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjW-WI-RUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2588" y="282"/>
+            <point key="canvasLocation" x="2506" y="280"/>
         </scene>
         <!--Customize Work View Controller-->
         <scene sceneID="m3X-9j-gea">
@@ -1846,7 +1889,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2e-Mb-adL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2191" y="282"/>
+            <point key="canvasLocation" x="2107" y="290"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="nEF-uz-HnC">
@@ -1857,11 +1900,11 @@
                         <viewControllerLayoutGuide type="bottom" id="BHk-nx-bCi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="io7-tC-RT0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2A-An-3FO">
-                                <rect key="frame" x="80" y="-95" width="320" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLS-QR-Wso">
                                         <rect key="frame" x="13" y="28" width="15" height="15"/>
@@ -1936,9 +1979,6 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructorReviewStrip.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Di-dr-aWC">
                                         <rect key="frame" x="13" y="214" width="160" height="1"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginPageBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="qsq-Sq-xqD">
-                                        <rect key="frame" x="8" y="307" width="304" height="195"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -1946,14 +1986,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="570"/>
+                    <size key="freeformSize" width="320" height="600"/>
                     <connections>
                         <outlet property="navigationBarView" destination="q2A-An-3FO" id="hU0-nT-5NN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7U-m4-bGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="282"/>
+            <point key="canvasLocation" x="1450" y="950"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pMb-Ta-8Lk">
@@ -1984,7 +2024,6 @@
         <image name="ILELogo.png" width="96" height="96"/>
         <image name="InstructorReviewStrip.png" width="382" height="1"/>
         <image name="IntroHome.png" width="640" height="1136"/>
-        <image name="LoginPageBackground.png" width="640" height="1489"/>
         <image name="LoginWithLinkedIn.png" width="397" height="62"/>
         <image name="LoginWithWeChat.png" width="397" height="62"/>
         <image name="RegisterWoman.png" width="371" height="557"/>
